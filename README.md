@@ -9,7 +9,7 @@ This API provides an easy way of accessing the account and password verification
 
 It brings in support for using an API key as per [this documentation](https://haveibeenpwned.com/API/v3)
 
-**The current version is 3.0.1**
+**The current version is 3.0.2**
 
 It cleans up code around the User-Agent and corrects some documentation mistakes, while version 3.0 
 brought in support for using an API key as per [this documentation](https://haveibeenpwned.com/API/v3)
@@ -37,7 +37,7 @@ Maven users can use the artifact from Maven Central with this dependency:
 <dependency>
   <groupId>me.legrange</groupId>
   <artifactId>haveibeenpwned</artifactId>
-  <version>3.0.1</version>
+  <version>3.0.2</version>
 </dependency>
 ```
 

@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * A HaveIBeenPwned breach 
- * 
+ *
  * @author gideon
  */
 public final class Breach {
@@ -39,6 +39,10 @@ public final class Breach {
     private boolean isRetired;
     @SerializedName("IsSpamList")
     private boolean isSpamList;
+    @SerializedName("IsMalware")
+    private boolean isMalware;
+    @SerializedName("isSubscriptionFree")
+    private boolean isSubscriptionFree;
     @SerializedName("LogoPath")
     private String logoPath;
 
@@ -154,6 +158,22 @@ public final class Breach {
         isSpamList = spamList;
     }
 
+    public boolean isMalware() {
+        return isMalware;
+    }
+
+    public void setIsMalware(boolean malware) {
+        isMalware = malware;
+    }
+
+    public boolean isSubscriptionFree() {
+        return isSubscriptionFree;
+    }
+
+    public void setIsSubscriptionFree(boolean subscriptionFree) {
+        isSubscriptionFree = subscriptionFree;
+    }
+
     public String getLogoPath() {
         return logoPath;
     }
@@ -179,6 +199,8 @@ public final class Breach {
                 ", isSensitive=" + isSensitive +
                 ", isRetired=" + isRetired +
                 ", isSpamList=" + isSpamList +
+                ", isMalware=" + isMalware +
+                ", isSubscriptionFree=" + isSubscriptionFree +
                 ", logoPath='" + logoPath + '\'' +
                 '}';
     }
